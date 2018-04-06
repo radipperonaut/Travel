@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Airbnb
+comment1.params=lo\ price
+comment1.target=Airbnb(Location,\ double)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=
+comment3.target=double\ getPrice()
+numComments=4
