@@ -18,9 +18,9 @@ public class Location extends Destination
     }
     public String toString ()
     {
-        return "Country: "+ getCountry()+
-                "\nCity: "+ getCity()+
-                "\nStreet: "+getStreet()+
-                "\nHouseID: "+getHouseID();
+        return "Улс: "+ getCountry()+
+                "\nХот: "+ getCity()+
+                "\nГудамж: "+getStreet()+
+                "\nБайр: "+getHouseID();
     }
 }

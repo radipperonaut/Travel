@@ -52,16 +52,16 @@ public class Travel
     }
     public String toString()
     {
-        return "Price: "+getPrice()+
-                "\nDays: "+getDays()+"\n"+
+        return "Үнэ: "+getPrice()+
+                "\nАялах өдрүүд: "+getDays()+"\n"+
                 des.toString()+
-                "\nAirbnb: \n"+
+                "\n\t\tБуудлын хаяг: \n"+
                 airbnb.toString();
     }
     public String toStr()
     {
-        return "Price: "+getPrice()+
-                "\nDays: "+getDays()+"\n"+
+        return "Үнэ: "+getPrice()+
+                "\nАялах өдрүүд: "+getDays()+"\n"+
                 des.toString();
     }
 }

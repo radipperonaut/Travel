@@ -10,7 +10,7 @@ public class Airbnb
     public String toString()
     {
         return loc.toString()+
-                "\nPrice: "+getPrice();
+                "\nҮнэ: "+getPrice();
             }
     public double getPrice ()
     {

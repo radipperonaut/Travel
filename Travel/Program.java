@@ -12,35 +12,32 @@ public class Program
         Scanner in = new Scanner (System.in);
         country = in.next(); //Destination coutry 
         city = in.next(); //Destination city
-        Destination des = new Destination(country, city);
+        Destination des = new Destination(country, city); //Destination object
         System.out.println("Аялах зардлаа оруулна уу?");
-        price= in.nextDouble();
+        price= in.nextDouble();                           //price
         System.out.println("Аялах хоногийн тоогоо оруулна уу?");
-        days= in.nextInt();
+        days= in.nextInt();                                 //days
         System.out.println("Буудал захиалах уу? (Тийм бол 1, Үгүй бол 0)");
         c=in.nextInt();
-        System.out.println("Буудлынхаа хаягийг оруулна уу? (Улс, Хот, Гудамж, Байршил)"); //Airbnb information 
-        String street, houseID;
-        country = in.next();
-        city = in.next();
-        street = in.next();
-        houseID= in.next();
-        Location loc  = new Location (country, city , street, houseID);
-        System.out.println("Буудлынхаа төлбөрийг оруулна уу?");
-        Airbnb air = new Airbnb (loc, in.nextDouble());  
-        Travel travel = new Travel (des, air, price, days); //till this line
-                        
-        
-        System.out.println("Таны аялалын мэдээлэл: ");
-        System.out.println(travel.toString());
-        
-        /*Destination des = new Destination("Mongolia", "Ulaanbaatar");
-        Location loc = new Location ("Mongolia", "Ulaanbaatar" , "Jamsran" , "16-104");
-        Airbnb air = new Airbnb (loc, 50000);
-        Travel travel = new Travel(des, 150000, 2);
-        Travel trabnb = new Travel (des, air, 152000, 3);
-        System.out.println(travel.toStr());
-        System.out.println(trabnb.toString());
-        */
+        switch (c)
+        {
+            case 1 :    System.out.println("Буудлынхаа хаягийг оруулна уу? (Улс, Хот, Гудамж, Байршил)"); //Airbnb information 
+                        String street, houseID;
+                        country = in.next(); //Location country
+                        city = in.next(); //Location city
+                        street = in.next();// Location street
+                        houseID= in.next(); //Location houseID
+                        Location loc  = new Location (country, city , street, houseID); //Location object for Airbnb
+                        System.out.println("Буудлынхаа төлбөрийг оруулна уу?");
+                        Airbnb air = new Airbnb (loc, in.nextDouble());  
+                        Travel travel1 = new Travel (des, air, price, days); //Travel object 
+                        System.out.println("Таны аялалын мэдээлэл: ");
+                        System.out.println(travel1.toString());
+                        break;
+            case 0 :    Travel travel0 = new Travel (des, price, days); //Travel object 
+                        System.out.println("Таны аялалын мэдээлэл: ");
+                        System.out.println(travel0.toStr());
+                        break;
+        }
     }
 }

@@ -26,8 +26,8 @@ public class Destination
     }
     public String toString()
     {
-        return "Country: "+ getCountry()+
-                "\nCity: "+ getCity();
+        return "Улс: "+ getCountry()+
+                "\nХот: "+ getCity();
     }
 }
     
