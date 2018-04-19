@@ -8,6 +8,20 @@ public class Location extends Destination
         street = stree;
         houseID = houseI;
     }
+    public void setCountry(String country){
+        super.country = country;
+    }
+    public String getCountry()
+    {
+        return super.country;
+    }
+    public void setCity(String city){
+        super.city = city;
+    }
+    public String getCity()
+    {
+        return super.city;
+    }  
     public String getStreet()
     {
         return street;

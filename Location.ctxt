@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Location
+comment1.params=country\ city\ stree\ houseI
+comment1.target=Location(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=country
+comment2.target=void\ setCountry(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getCountry()
+comment4.params=city
+comment4.target=void\ setCity(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getCity()
+comment6.params=
+comment6.target=java.lang.String\ getStreet()
+comment7.params=
+comment7.target=java.lang.String\ getHouseID()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

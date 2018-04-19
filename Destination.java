@@ -1,7 +1,7 @@
 public class Destination 
 {
-    private String country; 
-    private String city;
+    protected String country; 
+    protected String city;
     
     public Destination (String co, String ci)
     {
