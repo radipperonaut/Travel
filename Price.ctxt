@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Price
+comment1.params=days\ city
+comment1.target=double\ calculatePrice(int,\ Destination)
+comment2.params=days\ city\ hotel
+comment2.target=double\ calculatePrice(int,\ Destination,\ Airbnb)
+numComments=3

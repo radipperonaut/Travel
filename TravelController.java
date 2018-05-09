@@ -1,20 +1,20 @@
-public class Travel 
+public class TravelController
 {
     private Destination des;
-    private double price;
+    private double priceADay;
     private int days;
     private Airbnb airbnb;
     
-    public Travel (Destination des, double price, int days)
+    public TravelController (Destination des, double priceADay, int days)
     {
         setDes(des);
-        setPrice(price);
+        setPrice(priceADay);
         setDays(days);
     }
-    public Travel (Destination des, Airbnb air, double price, int days)
+    public TravelController (Destination des, Airbnb air, double priceADay, int days)
     {
         setDes(des);
-        setPrice(price);
+        setPrice(priceADay);
         setDays(days);
         airbnb=air;
     }
@@ -24,7 +24,7 @@ public class Travel
     }
     public void setPrice(double pri)
     {
-        price=pri;
+        priceADay=pri;
     }
     public void setDays(int day)
     {
@@ -40,7 +40,7 @@ public class Travel
     }
     public double getPrice()
     {
-        return price;
+        return priceADay;
     }
     public int getDays()
     {

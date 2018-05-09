@@ -1,5 +1,5 @@
 import java.util.*;
-public class Program 
+public class TravelProgram 
 {
     public static void main()
     {

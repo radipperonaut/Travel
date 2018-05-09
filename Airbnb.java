@@ -1,7 +1,7 @@
 public class Airbnb
 {
     private Location loc;
-    private double price; 
+    private double price;
     public Airbnb (Location lo, double price)
     {
         loc=lo;
@@ -15,5 +15,8 @@ public class Airbnb
     public double getPrice ()
     {
         return price;
+    }
+    public Location getLocation() {
+        return loc;
     }
 }
